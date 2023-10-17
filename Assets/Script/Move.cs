@@ -274,7 +274,6 @@ public class Move : MonoBehaviour
             if(x==goalX && z ==goalZ){
                 Debug.Log("TERMINER");
                 //play wining
-                PlayVideo();
                 PrintMap(mapping);
             }else{
                 StartCoroutine(WaitAndExecute());
@@ -346,17 +345,6 @@ public class Move : MonoBehaviour
 
     // Autres méthodes pour gérer le déplacement et d'autres fonctionnalités ici
 
-    public void PlayVideo()
-    {
-        if (videoPlayer != null)
-        {
-            if (!videoPlayer.gameObject.activeSelf)
-            {
-                videoPlayer.gameObject.SetActive(true); // Activer le GameObject si désactivé.
-            }((()))
 
-            videoPlayer.Play();
-        }
-    }
 
 }
